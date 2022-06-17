@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -f docker/development.Dockerfile -t douglira/docker-udemy-webapp .
+
+script:
+  - docker run -e CI=true douglira/docker-udemy-webapp npm run test
