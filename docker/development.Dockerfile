@@ -7,6 +7,4 @@ RUN npm install
 
 COPY . .
 
-VOLUME [ "src" ]
-
 CMD [ "npm", "run", "start" ]
