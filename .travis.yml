@@ -20,4 +20,4 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-1-702694290822"
   bucket_path: "docker-udemy-webapp"
   on:
-    branch: master
+    branch: main
